@@ -14,7 +14,7 @@ class TestCalculatrice(unittest.TestCase):
 
     def test_division(self):
         self.assertEqual(division(6, 3), 2)
-        with self.assertRaises(ValueError):
+        with self.assertRaises(ZeroDivisionError):
             division(6, 0)
 
 if __name__ == "__main__":
